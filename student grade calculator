@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of subjects:");
+        int numSubjects = scanner.nextInt();
+
+        double totalMarks = 0;
+
+        for (int i = 1; i <= numSubjects; i++) {
+            System.out.println("Enter marks for subject " + i + ":");
+            double marks = scanner.nextDouble(r);
+            totalMarks += marks;
+        }
+
+        double average = totalMarks / numSubjects;
+
+        System.out.println("Average grade: " + average);
+
+        scanner.close();
+    }
+}
